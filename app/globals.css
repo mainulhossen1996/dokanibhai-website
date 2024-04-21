@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -17,14 +18,65 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #363636;
+  background-color: #ffffff;
+  font-family: "Tajawal", sans-serif!important;
 }
+.font-tajwal{
+  font-family: "Tajawal", sans-serif!important;
+}
+.hero-bg{
+  background-image: url("/image/dokanibhai-cover.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 760px;
+}
+
+.scrolled {
+  border-bottom: 1px solid #e3e3e3!important;
+}
+
+.animation {
+  height:100px;
+  overflow:hidden;
+}
+
+.animation > div > div {
+  height:8rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation-name: text-animation;
+  animation-duration: 12s; /* Set the duration of the animation */
+  animation-iteration-count: infinite; /* Optionally repeat the animation */
+}
+
+.first div {
+  color:#009999;
+}
+.second div {
+  color:#0076bf;
+}
+.third div {
+  color:#4611a9;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -8rem;}
+  30% {margin-top: -8rem;}
+  40% {margin-top: -16rem;}
+  60% {margin-top: -16rem;}
+  70% {margin-top: -8rem;}
+  80% {margin-top: -8rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+
 
 @layer utilities {
   .text-balance {

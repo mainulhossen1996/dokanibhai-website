@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Clock, Video } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Clock, Video } from 'lucide-react'
 
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
@@ -165,25 +165,25 @@ const Calendar = () => {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="mt-[66px] mb-[30px] px-[7%] flex justify-center ">
-        <div className="bg-white grid grid-cols-9 rounded-[10px] border border-gray-200">
-          <div className="col-span-4">
+
+        <div className="bg-white flex w-[1150px] rounded-[10px] border border-gray-200 my-10">
+          <div className="w-5/12">
             <div className="relative">
               <div className="overflow-hidden hover:overflow-y-auto custom-scrollbar">
                 <div className="flex items-center px-6 py-6 border-b ">
                 <div className="">
                     <Image
-                    className="rounded-full h-[60px] w-[60px] object-cover"
+                    className="rounded-full h-[80px] w-[80px] object-cover"
                     width={100}
                     height={100}
                     alt="logo"
-                    src="/image/md-mainul.jpg"
+                    src="/image/salman.png"
                   />
                     </div>
                     <div className="ms-3 text-start">
                       <p className="font-bold">Salman Farshi</p>
-                      <p className="font-normal">Strategic Sales & Marketing, Dokanibhai</p>
+                      <p className="font-normal text-[14px]">Head of Sales, Dokanibhai</p>
+                      <p className="font-normal text-[14px] text-gray-500">+880 1843687598</p>
                     </div>
                 </div>
 
@@ -205,7 +205,7 @@ const Calendar = () => {
                   <div className="flex items-center pb-5">
                   <Video className="me-2" color="black" size={16}/>
                     <p className="font-semibold text-gray-500 text-sm mt-[2px]">
-                      Web conferencing details provided upon confirmation.
+                      Web conferencing
                     </p>
                   </div>
                   <div className="max-w-[400px] p-6 ps-0">
@@ -222,7 +222,7 @@ const Calendar = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-5 border-s">
+          <div className="w-7/12 border-s">
             <div className="">
               {showFormList ? (
                 <form
@@ -325,7 +325,7 @@ const Calendar = () => {
                 <div className="grid grid-cols-3 ">
                   <div className={showTimeSlots ? "col-span-2" : "col-span-3"}>
                     <div className="pt-8">
-                      <p className="text-lg ps-8 text-start font-bold text-gray-700">
+                      <p className="text-lg ps-8 text-center font-bold text-gray-700">
                         Select a Date & Time
                       </p>
 
@@ -334,7 +334,7 @@ const Calendar = () => {
                           className="bg-blue-50 hover:bg-blue-100 rounded-full p-3 cursor-pointer transform translate duration-300"
                           onClick={handlePrevMonth}
                         >
-                          {/* <FaAngleLeft className="text-blue-600 " /> */}
+                          <ChevronLeft className="text-blue-600" size={16} />
                         </button>
                         <p className="text-blue-500 text-sm w-[10rem]">
                           {`${new Date(
@@ -348,11 +348,11 @@ const Calendar = () => {
                           className="bg-blue-50 hover:bg-blue-100 rounded-full p-3 cursor-pointer transform translate duration-300"
                           onClick={handleNextMonth}
                         >
-                          {/* <FaAngleRight className="text-blue-600 " /> */}
+                          <ChevronRight className="text-blue-600" size={16} />
                         </button>
                       </div>
 
-                      <div className="flex items-center justify-between pt-7 overflow-x-auto ps-4">
+                      <div className="flex items-center justify-between pt-7 overflow-x-auto">
                         <table className="w-full ">
                           <thead>
                             <tr>
@@ -464,8 +464,7 @@ const Calendar = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
   );
 };
 

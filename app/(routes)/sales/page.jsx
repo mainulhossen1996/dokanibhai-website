@@ -9,7 +9,7 @@ const Sales = () => {
 
   return (
     <div className="text-center">
-        <div className="bg-gradient-to-r from-[#009999] to-[#00a599] bg-opacity-60">
+        {/* <div className="bg-gradient-to-r from-[#009999] to-[#00a599] bg-opacity-60">
           <div className="max-w-screen-2xl mx-auto grid grid-cols-2 gap-8 py-20">
             <div className="col-span-1 text-start pe-16">
               <p className="text-5xl font-extrabold text-white tracking-wide leading-relaxed ">
@@ -51,15 +51,23 @@ const Sales = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex w-full mx-auto justify-center mt-16">
-          <div>
-          <p className="text-gray-500 text-[18px] font-medium">
-            👋 Book a time that works best for you, and our team will discuss
-            how we can help improve and support your business.
+
+        <div className="max-w-screen-2xl mx-auto flex justify-center">
+        <div className="text-center mt-[50px] w-[60%]">
+          <p className="text-[50px] font-bold">
+          <span className="text-[#009999]">Book a Time </span><br/>That Works Best For You
           </p>
 
+          <p className="text-lg text-gray-400 mt-4">
+          Join the community of advertisers all over the world and learn
+                how you can optimize your marketing.</p>
+        </div>
+      </div>
+
+        <div className="flex w-full mx-auto justify-center">
+          <div>
           <Calendar />
           </div>
         </div>

@@ -34,7 +34,14 @@ body {
 }
 
 .scrolled {
-  border-bottom: 1px solid #e3e3e3!important;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.no-scroll {
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .animation {

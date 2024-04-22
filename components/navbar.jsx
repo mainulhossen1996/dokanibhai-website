@@ -30,8 +30,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-40 bg-white py-5" id="navBar">
-        <div className="flex justify-between items-center max-w-screen-2xl mx-auto">
+      <div className="sticky top-5 z-40" >
+        <div className="p-5 flex justify-between items-center max-w-screen-2xl mx-auto bg-white border border-gray-200 no-scroll" id="navBar">
           
           <div className="flex gap-16 items-center">
             <Image

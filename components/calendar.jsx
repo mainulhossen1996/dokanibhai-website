@@ -166,7 +166,7 @@ const Calendar = () => {
 
   return (
 
-        <div className="bg-white flex w-[1150px] rounded-[10px] border border-gray-200 my-10">
+        <div className="bg-white flex w-[1150px] rounded-[10px] border border-gray-200 shadow-inner my-10">
           <div className="w-5/12">
             <div className="relative">
               <div className="overflow-hidden hover:overflow-y-auto custom-scrollbar">

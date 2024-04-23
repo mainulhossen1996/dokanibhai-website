@@ -1,4 +1,4 @@
-
+import React from "react";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 import {Card} from "@nextui-org/card"
@@ -30,7 +30,7 @@ const type = () => {
               width={700}
               height={700}
               alt="Feature"
-              src="image/rpos.png"
+              src="/image/rpos.png"
             />
 
 
@@ -68,7 +68,7 @@ const type = () => {
               width={700}
               height={700}
               alt="Feature"
-              src="image/ecom.png"
+              src="/image/ecom.png"
             />
          </div>
             

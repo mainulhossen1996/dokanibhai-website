@@ -38,7 +38,7 @@ export default function Features() {
               width={500}
               height={500}
               alt="Feature"
-              src="/image/dokaniBhai-POS.png"
+              src="/image/rpos.png"
             />
             </div>
           

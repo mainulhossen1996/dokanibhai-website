@@ -1,5 +1,6 @@
-import { Button } from "@nextui-org/button";
-import { Image } from "@nextui-org/image";
+import { Tooltip, Button } from "@nextui-org/react";
+import Image from 'next/image'
+import Link from 'next/link'
 
 const hero = () => {
 
@@ -26,13 +27,44 @@ const hero = () => {
                 </p>
               </div>
 
-              <div className="lg:mt-[30px] mt-10 justify-center">
-                <Button className=" lg:w-[200px] lg:h-[50px]  md:w-[140px] md:h-[40px]   w-[150px] h-[36px] rounded-full bg-[#ffffff] hover:bg-[#eeeeee] border-2 border-[#009999] text-[#009999] lg:text-lg text-base font-semibold">
+              <div className="lg:mt-[30px] mt-10 flex gap-4 justify-center">
+              <Link
+              href="/sales"
+              >
+                <Button className=" lg:w-[200px] lg:h-[50px]  md:w-[140px] md:h-[40px]   w-[150px] h-[36px] rounded-full bg-[#009999] hover:bg-[#00a5a8] border-2 border-[#009999] hover:border-[#00a5a8] text-[#ffffff] lg:text-lg text-base font-semibold">
                 Request for Demo
                 </Button>
+              </Link>
+
+
+              <Tooltip
+      content={
+        <div className="px-1">
+         <Link
+              href="https://wa.me/+8801521488497?"
+              >
+                <Image
+              className="h-[50px] w-full object-contain"
+              width={500}
+              height={500}
+              alt="Feature"
+              src="/image/WhatsAppButtonGreenLarge.png"
+            />
+                </Link>
+        </div>
+      }
+    >
+     <Button className=" lg:w-[200px] lg:h-[50px]  md:w-[140px] md:h-[40px]   w-[150px] h-[36px] rounded-full bg-[#ffffff] hover:bg-[#eeeeee] border-2 border-[#009999] text-[#009999] lg:text-lg text-base font-semibold">
+              Live Talk
+                </Button>
+    </Tooltip>
+                
+              
 
                
               </div>
+
+          
        
           </div>
         </div>

@@ -7,8 +7,8 @@ import StoreSell from "@/components/storeSell";
 import Orders from "@/components/orders";
 import Campaign from "@/components/campaign";
 import Shipping from "@/components/shipping";
-
 import Faq from "@/components/faq"
+import Grow from "@/components/grow";
 
 export default function Features() {
 
@@ -191,6 +191,7 @@ export default function Features() {
 </div>
 
 <Faq/>
+<Grow/>
 
 
     </div>

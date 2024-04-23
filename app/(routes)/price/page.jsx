@@ -4,6 +4,7 @@ import { useState } from 'react';
 import PosPrice from "@/components/posPrice";
 import EcomPrice from "@/components/ecommercePrice";
 import Faq from "@/components/faq"
+import Grow from "@/components/grow";
 
 export default function Price() {
 
@@ -65,6 +66,7 @@ export default function Price() {
 </div>
 
 <Faq/>
+<Grow/>
 
 
     </div>

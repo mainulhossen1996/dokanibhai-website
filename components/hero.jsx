@@ -54,9 +54,14 @@ const hero = () => {
         </div>
       }
     >
-     <Button className=" lg:w-[200px] lg:h-[50px]  md:w-[140px] md:h-[40px]   w-[150px] h-[36px] rounded-full bg-[#ffffff] hover:bg-[#eeeeee] border-2 border-[#009999] text-[#009999] lg:text-lg text-base font-semibold">
+      <Link
+              href="https://wa.me/+8801521488497?" target="_blank"
+              >
+                 <Button className=" lg:w-[200px] lg:h-[50px]  md:w-[140px] md:h-[40px]   w-[150px] h-[36px] rounded-full bg-[#ffffff] hover:bg-[#eeeeee] border-2 border-[#009999] text-[#009999] lg:text-lg text-base font-semibold">
               Live Talk
                 </Button>
+              </Link>
+    
     </Tooltip>
                 
               

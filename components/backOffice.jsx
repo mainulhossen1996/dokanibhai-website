@@ -60,7 +60,7 @@ const backOffice = () => {
               width={600}
               height={600}
               alt="Feature"
-              src="/image/features.png"
+              src="image/features.png"
             />
           </div>
         </div>

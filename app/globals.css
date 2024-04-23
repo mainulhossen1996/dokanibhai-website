@@ -38,7 +38,12 @@ body {
   margin-top: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
+.active-svg{
+  filter: invert(32%) sepia(100%) saturate(1263%) hue-rotate(153deg) brightness(97%) contrast(105%);
+}
+.inactive-svg{
+  filter: invert(34%) sepia(9%) saturate(6%) hue-rotate(314deg) brightness(94%) contrast(94%);
+}
 .no-scroll {
   border-radius: 20px;
   margin-top: 20px;

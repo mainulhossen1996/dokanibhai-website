@@ -31,7 +31,7 @@ const faq = () => {
         <div className="flex w-full mx-auto justify-center my-16">
           <div className=" px-10">
             <p className="text-[40px] font-[600] text-center py-10 px-20">
-              Learn More About Dokanibhai
+            Frequently Asked Questions
             </p>
         <div className="">
         {accordions.map((PerAccordion, idx) => (

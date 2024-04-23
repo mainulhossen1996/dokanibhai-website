@@ -1,3 +1,4 @@
+
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 import {Card} from "@nextui-org/card"
@@ -21,15 +22,19 @@ const type = () => {
 
 
         <div className="flex gap-10 items-center max-w-screen-2xl mx-auto">
-
          <div className="w-1/2 flex justify-center">
+
+
          <Image
               className="h-[700px] w-full object-contain"
               width={700}
               height={700}
               alt="Feature"
-              src="/image/dokaniBhai-POS.png"
+              src="image/rpos.png"
             />
+
+
+
          </div>
           
             <div className="w-1/2">
@@ -63,7 +68,7 @@ const type = () => {
               width={700}
               height={700}
               alt="Feature"
-              src="/image/Dokanibhai-ecom.png"
+              src="image/ecom.png"
             />
          </div>
             

@@ -1,7 +1,9 @@
+'use client'
+import React from "react";
 import Image from "next/image";
 import Hero from "@/components/hero";
 import Feature from "@/components/feature";
-import Type from "@/components/type";
+import POS_Ecom from "@/components/pos_ecom";
 import BackOffice from "@/components/backOffice";
 
 export default function Home() {
@@ -9,7 +11,7 @@ export default function Home() {
     <>
    <Hero/>
    <Feature/>
-   <Type/>
+   <POS_Ecom/>
    <BackOffice/>
     </>
   );

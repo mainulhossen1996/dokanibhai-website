@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/button";
-import { Image } from "@nextui-org/image";
+import Image from 'next/image'
 import {Card} from "@nextui-org/card"
 import { FolderCog, Box, ShoppingBag } from 'lucide-react';
 
@@ -60,7 +60,7 @@ const backOffice = () => {
               width={600}
               height={600}
               alt="Feature"
-              src="image/features.png"
+              src="/image/features.png"
             />
           </div>
         </div>

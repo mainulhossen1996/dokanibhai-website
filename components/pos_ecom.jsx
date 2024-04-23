@@ -1,12 +1,12 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
-import { Image } from "@nextui-org/image";
+import Image from 'next/image'
 import {Card} from "@nextui-org/card"
 import { FolderCog, Box, ShoppingBag } from 'lucide-react';
 
 
 
-const type = () => {
+const pos_ecom = () => {
 
   return (
     <div>
@@ -26,9 +26,9 @@ const type = () => {
 
 
          <Image
-              className="h-[700px] w-full object-contain"
-              width={700}
-              height={700}
+              className="h-[600px] w-full object-contain"
+              width={600}
+              height={600}
               alt="Feature"
               src="/image/rpos.png"
             />
@@ -62,11 +62,11 @@ const type = () => {
             </div>
 
 
-         <div className="w-1/2 flex justify-center">
+         <div className="w-1/2 flex justify-center my-36">
          <Image
-              className="h-[700px] w-full object-contain"
-              width={700}
-              height={700}
+              className="h-[600px] w-full object-contain"
+              width={600}
+              height={600}
               alt="Feature"
               src="/image/ecom.png"
             />
@@ -81,4 +81,4 @@ const type = () => {
   );
 };
 
-export default type;
+export default pos_ecom;

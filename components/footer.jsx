@@ -19,8 +19,8 @@ const Footer = () => {
 
 
     <div class="mt-3">
-      <p class="text-gray-500 dark:text-neutral-500">We're part of the <a class="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="https://mpairtech.com">mPair</a> family.</p>
-      <p class="text-gray-500 dark:text-neutral-500">© Dokanibhai. 2024 mPair Tech. All rights reserved.</p>
+      <p class="text-gray-500 dark:text-neutral-500 text-sm">We're part of the <a class="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="https://mpairtech.com">mPair</a> family.</p>
+      <p class="text-gray-500 dark:text-neutral-500 text-sm">© Dokanibhai. 2024 mPair Tech. All rights reserved.</p>
     </div>
 
 

@@ -7,13 +7,13 @@ const ecomPrice = () => {
           <section class="bg-white">
   <div class="px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
 
-      <div class="space-y-2 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+      <div class="space-y-2 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 space-y-6">
          
           <div class="flex flex-col p-6 mx-auto max-w-lg text-start text-gray-900 bg-white rounded-lg border border-gray-100 shadow  xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">Single Branch</h3>
-              <p class="font-light text-gray-600 sm:text-lg ">Best option for personal use & for your next project.</p>
-              <div class="flex justify-start items-baseline my-8">
-                  <span class="text-4xl font-extrabold">2500 BDT</span>
+          <h3 class="mb-4 text-lg lg:text-2xl font-semibold">Single Branch</h3>
+              <p class="font-light text-gray-600 text-sm lg:text-lg ">Best option for personal use & for your next project.</p>
+              <div class="flex justify-start items-baseline my-4 lg:my-8">
+                  <span class="text-2xl lg:text-4xl font-extrabold">2500 BDT</span>
                   <span class="text-gray-500 dark:text-gray-500">/ month</span>
               </div>
               
@@ -63,10 +63,10 @@ const ecomPrice = () => {
           </div>
 
           <div class="flex flex-col p-6 mx-auto max-w-lg text-start text-gray-900 bg-white rounded-lg border border-gray-100 shadow  xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">Multi Branch</h3>
-              <p class="font-light text-gray-600 sm:text-lg ">Best option for personal use & for your next project.</p>
-              <div class="flex justify-start items-baseline my-8">
-                  <span class="text-4xl font-extrabold">3500 BDT</span>
+          <h3 class="mb-4  text-lg lg:text-2xl font-semibold">Multi Branch</h3>
+              <p class="font-light text-gray-600 text-sm lg:text-lg">Best option for personal use & for your next project.</p>
+              <div class="flex justify-start items-baseline my-4 lg:my-8">
+                  <span class="text-2xl lg:text-4xl font-extrabold">3500 BDT</span>
                   <span class="text-gray-500 dark:text-gray-500">/ month</span>
               </div>
               
@@ -117,10 +117,10 @@ const ecomPrice = () => {
 
 
           <div class="flex flex-col p-6 mx-auto max-w-lg text-start text-gray-900 bg-white rounded-lg border border-gray-100 shadow  xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">3+ Branch</h3>
-              <p class="font-light text-gray-600 sm:text-lg ">Best option for personal use & for your next project.</p>
-              <div class="flex justify-start items-baseline my-8">
-                  <span class="text-4xl font-extrabold">RFQ</span>
+          <h3 class="mb-4  text-lg lg:text-2xl font-semibold">Enterprise</h3>
+              <p class="font-light text-gray-600 text-sm lg:text-lg">Best option for personal use & for your next project.</p>
+              <div class="flex justify-start items-baseline my-4 lg:my-8">
+                  <span class="text-2xl lg:text-4xl font-extrabold">RFQ</span>
                   
               </div>
               

@@ -54,6 +54,7 @@ export const Navbar = () => {
             <Link href="/home" className={`font-semibold hover:text-[#009999] ${pathname === "/home" ? "text-[#009999]" : "text-gray-600"}`}>Home</Link>
             <Link href="/features" className={`font-semibold hover:text-[#009999] ${pathname === "/features" ? "text-[#009999]" : "text-gray-600"}`}>Features</Link>
             <Link href="/price" className={`font-semibold hover:text-[#009999] ${pathname === "/price" ? "text-[#009999]" : "text-gray-600"}`}>Pricing</Link>
+            <Link href="/shop" className={`font-semibold hover:text-[#009999] ${pathname === "/shop" ? "text-[#009999]" : "text-gray-600"}`}>Shop</Link>
           </div>
         </div>
 
@@ -84,6 +85,7 @@ export const Navbar = () => {
           <Link href="/home"><p className="py-2 font-semibold text-center hover:text-[#009999]">Home</p></Link>
           <Link href="/features"><p className="py-2 font-semibold text-center hover:text-[#009999]">Features</p></Link>
           <Link href="/price"><p className="py-2 font-semibold text-center hover:text-[#009999]">Pricing</p></Link>
+          <Link href="/shop"><p className="py-2 font-semibold text-center hover:text-[#009999]">Shop</p></Link>
           <Link href="/sales"><p className="py-2 font-semibold text-center hover:text-[#009999]">Talk to Sales</p></Link>
           <Button className="mt-2 w-full h-[35px] rounded-full bg-[#009999] hover:bg-[#00a5a8] text-white text-sm font-semibold leading-[14px]">Sign In</Button>
         </div>

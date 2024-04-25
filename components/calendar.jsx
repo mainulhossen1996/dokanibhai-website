@@ -145,7 +145,7 @@ const Calendar = () => {
                   onClick={() => handleNumberClick(date)}
                 >
                   <p
-                    className={` text-base text-center font-medium flex justify-center items-center ${
+                    className={` text-xs lg:text-lg text-center font-medium flex justify-center items-center ${
                       currentMonth === currentMonthIndex &&
                       currentYear === currentYearIndex &&
                       date === currentDate
@@ -166,70 +166,48 @@ const Calendar = () => {
 
   return (
 
-        <div className="bg-white flex w-[1150px] rounded-[10px] border border-gray-200 shadow-inner my-10">
-          <div className="w-5/12">
-            <div className="relative">
-              <div className="overflow-hidden hover:overflow-y-auto custom-scrollbar">
-                <div className="flex items-center px-6 py-6 border-b ">
-                <div className="">
-                    <Image
-                    className="rounded-full h-[80px] w-[80px] object-cover"
-                    width={100}
-                    height={100}
-                    alt="logo"
-                    src="/image/salman.png"
-                  />
-                    </div>
-                    <div className="ms-3 text-start">
-                      <p className="font-bold">Salman Farshi</p>
-                      <p className="font-normal text-[14px]">Head of Sales, Dokanibhai</p>
-                      <p className="font-normal text-[14px] text-gray-500">+880 1843687598</p>
-                    </div>
-                </div>
-
-                <div className="px-6 text-start py-4">
-
-                  <p className="font-semibold text-gray-500 text-sm">
-                    Team Dokanibhai
-                  </p>
-                  <p className="font-bold text-[25px] ">
-                    eMeet with Dokanibhai
-                  </p>
-                  <div className="flex items-center pt-5 pb-3">
-                    <Clock className="me-2" color="black" size={16}/>
-                    <p className="font-semibold text-gray-500 text-sm">
-                      20 min
-                    </p>
-                  </div>
-
-                  <div className="flex items-center pb-5">
-                  <Video className="me-2" color="black" size={16}/>
-                    <p className="font-semibold text-gray-500 text-sm mt-[2px]">
-                      Web conferencing
-                    </p>
-                  </div>
-                  <div className="max-w-[400px] p-6 ps-0">
-                    <p className="text-sm pb-4">
-                    DokaniBhai is a one Stop POS Inventory Solution with e-commerce web integration that is designed to assist retail shop owners to manage their business.
-                    </p>
-
-                    <p className="text-sm pb-4">
-                      Let's huddle for 20 minutes to discover pain points &
-                      solutions!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="bg-white rounded-[10px] mx-6 lg:mx-0 border border-gray-200 shadow-inner my-10 grid lg:grid-cols-[2fr,3fr] grid-cols-1">
+    <div className="lg:border-r">
+      <div className="p-6">
+        <div className="flex items-center border-b mb-6 pb-6">
+          <div className="flex-shrink-0">
+            <Image
+              className="rounded-full h-[80px] w-[80px] object-cover"
+              width={100}
+              height={100}
+              alt="logo"
+              src="/image/salman.png"
+            />
           </div>
-          <div className="w-7/12 border-s">
-            <div className="">
-              {showFormList ? (
-                <form
-                  className="p-6 text-start w-4/5"
-                  onSubmit={handleFormSubmit}
-                >
-                  <h2 className="text-lg font-bold mb-4">Enter Contact Details</h2>
+          <div className="ms-3 text-start flex flex-col">
+            <p className="font-bold">Salman Farshi</p>
+            <p className="font-normal text-[14px]">Head of Sales, Dokanibhai</p>
+            <p className="font-normal text-[14px] text-gray-500">+880 1843687598</p>
+          </div>
+        </div>
+  
+        <div className="text-start">
+          <p className="font-semibold text-gray-500 text-sm">Team Dokanibhai</p>
+          <p className="font-bold text-[25px]">eMeet with Dokanibhai</p>
+          <div className="flex items-center pt-5 pb-3">
+            <Clock className="me-2" color="black" size={16}/>
+            <p className="font-semibold text-gray-500 text-sm">20 min</p>
+          </div>
+          <div className="flex items-center pb-5">
+            <Video className="me-2" color="black" size={16}/>
+            <p className="font-semibold text-gray-500 text-sm mt-[2px]">Web conferencing</p>
+          </div>
+          <div className="max-w-[400px]">
+            <p className="text-sm pb-4">DokaniBhai is a one Stop POS Inventory Solution with e-commerce web integration that is designed to assist retail shop owners to manage their business.</p>
+            <p className="text-sm pb-4">Let's huddle for 20 minutes to discover pain points & solutions!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    {showFormList ? (
+      <form className="p-6 w-full" onSubmit={handleFormSubmit}>
+        <h2 className="text-lg font-bold mb-4">Enter Contact Details</h2>
                   <div className="mb-4">
                     <label
                       htmlFor="name"
@@ -323,13 +301,13 @@ const Calendar = () => {
                 </form>
               ) : (
                 <div className="grid grid-cols-3 ">
-                  <div className={showTimeSlots ? "col-span-2" : "col-span-3"}>
+                  <div className={showTimeSlots ? "lg:col-span-2 col-span-1" : "lg:col-span-3 col-span-4"}>
                     <div className="pt-8">
-                      <p className="text-lg ps-8 text-center font-bold text-gray-700">
+                      <p className="text-lg text-center font-bold text-gray-700">
                         Select a Date & Time
                       </p>
 
-                      <div className="flex justify-center items-center pt-8 ps-4">
+                      <div className="flex justify-center items-center pt-8">
                         <button
                           className="bg-blue-50 hover:bg-blue-100 rounded-full p-3 cursor-pointer transform translate duration-300"
                           onClick={handlePrevMonth}
@@ -359,49 +337,49 @@ const Calendar = () => {
                               {" "}
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     Su
                                   </p>
                                 </div>
                               </th>
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     Mo
                                   </p>
                                 </div>
                               </th>
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     Tu
                                   </p>
                                 </div>
                               </th>
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     We
                                   </p>
                                 </div>
                               </th>
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     Th
                                   </p>
                                 </div>
                               </th>
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     Fr
                                   </p>
                                 </div>
                               </th>
                               <th>
                                 <div className="w-full flex justify-center">
-                                  <p className="text-base font-medium text-center text-gray-800 ">
+                                  <p className="text-sm lg:text-md font-semibold text-center text-gray-800 ">
                                     Sa
                                   </p>
                                 </div>
@@ -414,7 +392,7 @@ const Calendar = () => {
                     </div>
                   </div>
                   {showTimeSlots && (
-                    <div className="col-span-1 ">
+                    <div className="lg:col-span-1 col-span-2">
                       <p className="pt-24 text-start mx-4">
                         {clickedDate
                           ? new Date(
@@ -463,7 +441,7 @@ const Calendar = () => {
               )}
             </div>
           </div>
-        </div>
+        
 
   );
 };

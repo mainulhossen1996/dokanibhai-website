@@ -55,12 +55,12 @@ const Sales = () => {
 
 
         <div className="max-w-screen-2xl mx-auto flex justify-center">
-        <div className="text-center mt-[50px] w-[60%]">
-          <p className="text-[50px] font-bold">
+        <div className="text-center mt-[50px] lg:w-[60%] w-full">
+          <p className="lg:text-[50px] text-[25px] font-bold">
           <span className="text-[#009999]">Book a Time </span><br/>That Works Best For You
           </p>
 
-          <p className="text-lg text-gray-400 mt-4">
+          <p className="lg:text-lg text-sm px-6 lg:px-0 text-gray-400 mt-4">
           Join the community of advertisers all over the world and learn
                 how you can optimize your marketing.</p>
         </div>

@@ -11,23 +11,23 @@ const hero = () => {
           <div className="items-center text-center lg:mt-24 mt-4 lg:py-20 py-0">
           
           <section class="animation">
-  <div class="first text-[25px] sm:text-[30px] md:text-[30px] lg:text-[90px] font-semibold leading-[40px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block font-tajwal">
+  <div class="first text-[27px] md:text-[30px] lg:text-[90px] font-semibold leading-[40px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block font-tajwal">
     <div>Making Retail Store POS</div>
   </div>
-  <div class="second text-[25px] sm:text-[30px] md:text-[30px] lg:text-[90px] font-semibold leading-[40px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block font-tajwal">
+  <div class="second text-[27px] md:text-[30px] lg:text-[90px] font-semibold leading-[40px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block font-tajwal">
     <div>Making Ecommerce Orders</div>
   </div>
-  <div class="third text-[25px] sm:text-[30px] md:text-[30px] lg:text-[90px] font-semibold leading-[40px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block font-tajwal">
+  <div class="third text-[27px] md:text-[30px] lg:text-[90px] font-semibold leading-[40px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block font-tajwal">
     <div>Making Sales Campaign</div>
   </div>
 </section>
 
 
-  <p className="text-[#363636] text-[25px] sm:text-[30px] md:text-[30px] lg:text-[90px] font-semibold leading-[20px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block lg:mt-4 mt-2"> Better For Everyone</p>
+  <p className="text-[#363636] text-[27px] sm:text-[30px] md:text-[30px] lg:text-[90px] font-semibold leading-[20px] sm:leading-[24px] md:leading-[24.4px] lg:leading-[74.4px] block lg:mt-4 mt-2"> Better For Everyone</p>
                 
 
-              <div className="lg:mt-16 mt-4 px-10 lg:px-[300px]">
-                <p className="lg:text-[20px] text-xs text-[#777777] lg:leading-[35px] leading-[20px] font-tajwal">
+              <div className="lg:mt-16 mt-4 px-6 lg:px-[300px]">
+                <p className="lg:text-[20px] text-[17px] lg:text-[#777777] text-[#565656] lg:leading-[35px] leading-[25px] font-tajwal">
                 Experience the future of retail with Dokanibhai POS Inventory Solution 
                 including e-commerce integration to start your journey towards efficiency and growth today.
                 

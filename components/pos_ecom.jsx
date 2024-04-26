@@ -35,7 +35,7 @@ const pos_ecom = () => {
   </div>
 </div>
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-screen-2xl mx-auto lg:mt-36 mt-10 mb-20 lg:mb-0">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-screen-2xl mx-auto lg:mt-36 mt-10 mb-5 lg:mb-0">
 
 
   <div className="flex justify-center order-2 lg:order-1">

@@ -101,11 +101,11 @@ body {
 
 @media only screen and (max-width: 600px) {
   .hero-bg{
-    background-image: url("/image/dokanibhai-cover.png");
+    background-image: url("/image/dokanibhai-cover-m.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 240px;
+    height: 320px;
   }
   .scrolled {
     border-radius: 10px;

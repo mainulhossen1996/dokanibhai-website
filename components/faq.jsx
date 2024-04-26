@@ -36,7 +36,7 @@ const faq = () => {
         <div className="max-w-screen-lg">
         {accordions.map((PerAccordion, idx) => (
           <div key={idx} className="mb-4 lg:px-10 px-0 mx-6 lg:mx-0 border-b-2 border-[#eeeeee] py-2">
-            <button onClick={() => toggle(idx)} className="flex h-full w-full items-center justify-between lg:py-4 py-2 font-medium text-start text-white dark:text-black">
+            <button onClick={() => toggle(idx)} className="flex h-full w-full items-center justify-between lg:py-4 py-2 font-medium text-start">
               <span className="sm:text-lg md:text-2xl font-[600]">{PerAccordion.title}</span>
               <span className="rounded-full">
                 <svg className="ml-8 shrink-0 fill-[#009999]" width="16" height="16" xmlns="http://www.w3.org/2000/svg">

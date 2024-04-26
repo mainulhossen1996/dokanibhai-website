@@ -35,7 +35,7 @@ export const Navbar = () => {
     <>
   
     <div className="sticky top-3 z-50 mx-3 lg:mx-0">
-      <div className="lg:p-5 p-1 px-3 flex justify-between items-center max-w-screen-2xl mx-auto bg-white border lg:rounded-2xl rounded-[10px] border-gray-200" id="navBar">
+      <div className="lg:p-5 p-1 px-3 flex justify-between items-center max-w-screen-2xl mx-auto bg-white  lg:rounded-2xl rounded-[10px]" id="navBar">
         
         {/* Logo and Links container */}
         <div className="flex items-center gap-5 md:gap-16">
